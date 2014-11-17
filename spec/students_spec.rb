@@ -9,7 +9,7 @@ describe Student do
   end
 
   it "can have badges awarded" do
-    student.award :unixoid
+    student.badges << :unixoid
     expect(student.has_unixoid?).to be true
   end
 
